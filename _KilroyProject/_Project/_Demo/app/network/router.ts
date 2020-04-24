@@ -14,14 +14,9 @@ export const routes = [
     {
         path: '/', // 首页
         component: Index
-    },
-    {
-        path: '/index', // 首页
-        component: Index
     }
     
     // 二级页面
-    
 ];
 
 Vue.use(VueRouter);
