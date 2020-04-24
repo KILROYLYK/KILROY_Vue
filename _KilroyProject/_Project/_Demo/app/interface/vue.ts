@@ -4,7 +4,7 @@ import { Component, VNode } from "vue";
 class Class<T> {
 }
 
-interface vueInterface {
+interface VueInterface {
     name: string,
     
     // 数据
@@ -31,7 +31,7 @@ interface vueInterface {
     template?: string, // 传入的模板字符串
     render: (h: () => VNode) => VNode,  // 传入的render函数
     renderError?: (h: () => VNode, err: Error) => VNode,
-    staticRenderFns?: Array<() => VNode>,
+    staticRenderFns?: Function[],
     
     // 生命周期
     beforeCreate?: Function, // 创建之前
@@ -61,7 +61,7 @@ interface vueInterface {
     
     // 关系
     provide?: Object | Function,
-    inject?: { [key: string]: string | Symbol } | Array<string>,
+    inject?: { [key: string]: string | Symbol } | string[],
     
     // 组件
     model?: {
@@ -71,17 +71,17 @@ interface vueInterface {
     
     // 其他
     parent?: Component, // 父组件实例
-    mixins?: Array<Object>, // mixins传入的数据
+    mixins?: Object[], // mixins传入的数据
     name?: string, // 当前的组件名
     extends?: Class<Component> | Object, // extends传入的数据
     delimiters?: [string, string], // 模板分隔符
     
     // 私有属性，均为内部创建自定义组件的对象时使用
     _isComponent?: true,  // 是否是组件
-    _propKeys?: Array<string>, // props传入对象的键数组
+    _propKeys?: string[], // props传入对象的键数组
     _parentVnode?: VNode, // 当前组件，在父组件中的VNode对象
     _parentListeners?: Object, // 当前组件，在父组件上绑定的事件
-    _renderChildren?: Array<VNode>, // 父组件中定义在当前元素内的子元素的VNode数组（slot）
+    _renderChildren?: VNode[], // 父组件中定义在当前元素内的子元素的VNode数组（slot）
     _componentTag: string,  // 自定义标签名
     _scopeId: string,
     _base: Class<Component>, // Vue

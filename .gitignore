@@ -3,8 +3,7 @@
 /.eslintignore
 /tsconfig.json
 /tsconfig.tsbuildinfo
-/.tslintrc.js
-/.tslintignore
+/tslint.json
 /package.json
 /package-lock.json
 /.idea

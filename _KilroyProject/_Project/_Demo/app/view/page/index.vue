@@ -11,12 +11,11 @@
         },
         data: () => {
             const _this = this;
-            return {
-            }
+            return {}
         }
     }
 </script>
 
-<style scoped>
+<style lang="less" rel="stylesheet/less" scoped>
 
 </style>
