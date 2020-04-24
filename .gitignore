@@ -13,7 +13,6 @@
 *.mp4
 main.js
 main.ts
-main.tsx
 app.vue
 /webpack.config.js
 
