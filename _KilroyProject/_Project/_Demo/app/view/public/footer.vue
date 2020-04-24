@@ -6,8 +6,14 @@
 <script>
     export default {
         name: 'Footer',
-        props: {},
-        components: {}
+        props: {
+            data: Object
+        },
+        data: () => {
+            const _this = this;
+            return {
+            }
+        }
     }
 </script>
 

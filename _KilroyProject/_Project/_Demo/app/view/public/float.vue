@@ -1,14 +1,19 @@
 <template>
     <section id="index" class="index">
-        KILROY
     </section>
 </template>
 
 <script>
     export default {
         name: 'Index',
-        props: {},
-        components: {}
+        props: {
+            data: Object
+        },
+        data: () => {
+            const _this = this;
+            return {
+            }
+        }
     }
 </script>
 
