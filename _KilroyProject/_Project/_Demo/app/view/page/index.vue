@@ -7,7 +7,8 @@
 <script>
     export default {
         name: 'Index',
-        props: {}
+        props: {},
+        components: {}
     }
 </script>
 
