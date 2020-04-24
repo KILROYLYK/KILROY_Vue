@@ -1,10 +1,12 @@
 ﻿/.DS_Store
 /.eslintrc.js
 /.eslintignore
-/package.json
-/package-lock.json
 /tsconfig.json
 /tsconfig.tsbuildinfo
+/.tslintrc.js
+/.tslintignore
+/package.json
+/package-lock.json
 /.idea
 /node_modules
 

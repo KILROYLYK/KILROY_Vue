@@ -3,7 +3,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" type="text/tsx">
     export default {
         name: 'Index',
         props: {
