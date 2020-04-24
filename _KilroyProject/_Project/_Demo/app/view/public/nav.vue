@@ -1,11 +1,11 @@
 <template>
-    <div id="index" class="index">
-    </div>
+    <nav id="nav" class="nav">
+    </nav>
 </template>
 
 <script>
     export default {
-        name: 'Index',
+        name: 'Nav',
         props: {},
         components: {}
     }

@@ -1,6 +1,7 @@
 <template>
-    <div id="index" class="index">
-    </div>
+    <section id="index" class="index">
+        KILROY
+    </section>
 </template>
 
 <script>
