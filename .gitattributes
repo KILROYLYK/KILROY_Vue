@@ -11,9 +11,8 @@
 *.sess linguist-language=js
 
 *.html linguist-language=js
-
 *.vue linguist-language=js
-*.php linguist-language=js
+
 *.md linguist-language=js
 
 *.jpg linguist-language=js
