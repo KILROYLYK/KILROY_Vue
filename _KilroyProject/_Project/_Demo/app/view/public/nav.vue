@@ -19,7 +19,7 @@
 <style lang="less" rel="stylesheet/less" scoped>
     @import '../../../../_Base/css/base.less';
     
-    @app_img: '../../src/image/';
+    @app_img: '../../src/image/nav/';
     
     #nav {
         .position(fixed, 0*@px, 0*@px, auto, 0*@px);
