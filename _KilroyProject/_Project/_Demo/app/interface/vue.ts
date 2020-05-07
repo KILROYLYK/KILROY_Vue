@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { Component, VNode } from "vue";
 
 class Class<T> {
