@@ -11,33 +11,6 @@
                         <span class="fa fa-facebook"></span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fa fa-twitter"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fa fa-instagram"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fa fa-linkedin"></span>
-                    </a>
-                </li>
             </ul>
         </div>
     </footer>
@@ -68,8 +41,10 @@
     @image_footer: '../src/image/footer/';
     
     .footer {
+        overflow: hidden;
         .position(absolute, auto, 0*@px, 0*@px, 0*@px);
+        z-index: 1;
         width: 100%;
-        height: 60*@px;
+        height: 100%;
     }
 </style>

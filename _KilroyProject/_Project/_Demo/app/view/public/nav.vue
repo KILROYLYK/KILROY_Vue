@@ -1,5 +1,5 @@
 <template>
-    <nav id="nav" class="nav" >
+    <nav id="nav" class="nav">
     </nav>
 </template>
 
@@ -28,7 +28,9 @@
     @image_nav: '../src/image/nav/';
     
     #nav {
+        overflow: hidden;
         .position(absolute, 0*@px, 0*@px, auto, 0*@px);
+        z-index: 1;
         width: 100%;
         height: 60*@px;
         background: fade(#000000, 75);
