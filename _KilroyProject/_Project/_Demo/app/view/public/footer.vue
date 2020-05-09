@@ -1,18 +1,5 @@
 <template>
     <footer id="footer" class="footer">
-        <div>
-            <ul>
-                <li>
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fa fa-facebook"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
     </footer>
 </template>
 

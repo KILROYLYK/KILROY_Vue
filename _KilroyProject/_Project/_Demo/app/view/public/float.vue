@@ -1,6 +1,6 @@
 <template>
-    <section id="float" class="float">
-    </section>
+    <div id="float" class="float">
+    </div>
 </template>
 
 <script>
