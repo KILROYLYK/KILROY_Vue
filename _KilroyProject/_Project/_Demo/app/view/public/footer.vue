@@ -42,7 +42,7 @@
     
     .footer {
         overflow: hidden;
-        .position(absolute, auto, 0*@px, 0*@px, 0*@px);
+        .position(absolute, auto, 0, 0, 0);
         z-index: 1;
         width: 100%;
         height: 60*@px;

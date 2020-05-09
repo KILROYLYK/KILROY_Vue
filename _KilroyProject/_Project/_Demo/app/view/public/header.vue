@@ -29,7 +29,7 @@
     
     .header {
         overflow: hidden;
-        .position(absolute, 0*@px, 0*@px, auto, 0*@px);
+        .position(absolute, 0, 0, auto, 0);
         z-index: 0;
         width: 100%;
         height: 400*@px;

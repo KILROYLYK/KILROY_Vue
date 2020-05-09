@@ -25,11 +25,11 @@
 <style lang="less" rel="stylesheet/less" scoped>
     @import '../../../../_Base/css/base.less';
     
-    @image_nav: '../src/image/header/';
+    @image_nav: '../src/image/float/';
     
     .float {
         overflow: hidden;
-        .position(fixed, 40%, 0*@px, auto, auto);
+        .position(fixed, 40%, 0, auto, auto);
         z-index: 1;
         width: 50*@px;
         height: 100*@px;
