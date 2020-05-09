@@ -3,20 +3,36 @@
     </header>
 </template>
 
-<script>
+<script lang="ts" type="text/tsx">
     export default {
         name: 'Header',
         props: {
-            data: Object
+            Global: Function,
+            Data: Object
         },
-        data: () => {
-            const _this = this;
-            return {
-            }
+        data: (component) => {
+            const _this = this,
+                props = {
+                    Global: component.Global,
+                    Data: component.Data
+                };
+            
+            return {}
         }
     }
 </script>
 
-<style scoped>
-
+<style lang="less" rel="stylesheet/less" scoped>
+    @import '../../../../_Base/css/base.less';
+    
+    @image_nav: '../src/image/header/';
+    
+    .header {
+        overflow: hidden;
+        .position(absolute, 0*@px, 0*@px, auto, 0*@px);
+        z-index: 0;
+        width: 100%;
+        height: 400*@px;
+    }
 </style>
+

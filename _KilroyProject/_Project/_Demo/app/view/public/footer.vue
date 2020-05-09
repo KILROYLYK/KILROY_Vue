@@ -45,6 +45,6 @@
         .position(absolute, auto, 0*@px, 0*@px, 0*@px);
         z-index: 1;
         width: 100%;
-        height: 100%;
+        height: 60*@px;
     }
 </style>
