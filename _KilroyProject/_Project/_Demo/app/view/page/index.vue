@@ -1,6 +1,6 @@
 <template>
     <div id="index" class="index">
-        <Particle :Global="Global" :Data="Data" />
+        <Particle :Data="Data" />
     </div>
 </template>
 
@@ -13,17 +13,17 @@
             Particle
         },
         props: {
-            Global: Function,
             Data: Object
         },
         data: (component) => {
             const _this = this,
-                props = {
-                    Global: component.Global,
+                prop = {
                     Data: component.Data
                 };
             
-            return {}
+            return {
+                name: prop + '_Index'
+            }
         }
     }
 </script>

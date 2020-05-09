@@ -5,13 +5,24 @@
 <script lang="ts" type="text/tsx">
     export default {
         name: 'Particle',
+        props: {
+            Data: Object
+        },
         data: (component) => {
             const _this = this,
-                props = {};
+                prop = {
+                    Data: component.Data
+                };
             
-            return {}
+            return {
+                name: prop + '_Particle'
+            }
+        },
+        mounted: () => {
+            const dom = document.getElementById('particle');
         }
     }
+
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped>

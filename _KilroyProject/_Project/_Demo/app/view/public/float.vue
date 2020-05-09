@@ -5,19 +5,19 @@
 
 <script>
     export default {
-        name: 'Index',
+        name: 'Float',
         props: {
-            Global: Function,
             Data: Object
         },
         data: (component) => {
             const _this = this,
-                props = {
-                    Global: component.Global,
+                prop = {
                     Data: component.Data
                 };
             
-            return {}
+            return {
+                name: prop + '_Float'
+            }
         }
     }
 </script>

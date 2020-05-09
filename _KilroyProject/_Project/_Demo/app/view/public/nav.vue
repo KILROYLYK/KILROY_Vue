@@ -7,17 +7,17 @@
     export default {
         name: 'Nav',
         props: {
-            Global: Function,
             Data: Object
         },
         data: (component) => {
             const _this = this,
-                props = {
-                    Global: component.Global,
+                prop = {
                     Data: component.Data
                 };
             
-            return {}
+            return {
+                name: prop + '_Nav'
+            }
         }
     }
 </script>

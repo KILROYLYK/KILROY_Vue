@@ -8,7 +8,7 @@ interface VueInterface {
     
     // 数据
     data: void | Object | Function, // 传入的数据
-    props: {}, // 传入的参数
+    props: {} | string[], // 传入的参数
     propsData?: Object, // 对于自定义组件，父级通过`props`传过来的数据
     computed?: { // 传入的计算属性
         [key: string]: Function | {
