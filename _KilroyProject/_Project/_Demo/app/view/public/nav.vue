@@ -1,5 +1,5 @@
 <template>
-    <nav id="nav" class="nav">
+    <nav id="nav" class="nav" >
     </nav>
 </template>
 
@@ -7,10 +7,16 @@
     export default {
         name: 'Nav',
         props: {
-            data: Object
+            Global: Function,
+            Data: Object
         },
-        data: () => {
-            const _this = this;
+        data: (component) => {
+            const _this = this,
+                props = {
+                    Global: component.Global,
+                    Data: component.Data
+                };
+            
             return {}
         }
     }
@@ -18,9 +24,8 @@
 
 <style lang="less" rel="stylesheet/less" scoped>
     @import '../../../../_Base/css/base.less';
-
-    @app_img: '../src/image/';
-    @app_img_nav: '@{app_img}nav/';
+    
+    @image_nav: '../src/image/nav/';
     
     #nav {
         .position(absolute, 0*@px, 0*@px, auto, 0*@px);

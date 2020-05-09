@@ -47,10 +47,16 @@
     export default {
         name: 'Footer',
         props: {
-            data: Object
+            Global: Function,
+            Data: Object
         },
-        data: () => {
-            const _this = this;
+        data: (component) => {
+            const _this = this,
+                props = {
+                    Global: component.Global,
+                    Data: component.Data
+                };
+            
             return {}
         }
     }
@@ -59,8 +65,7 @@
 <style lang="less" rel="stylesheet/less" scoped>
     @import '../../../../_Base/css/base.less';
     
-    @app_img: '../src/image/';
-    @app_img_footer: '@{app_img}footer/';
+    @image_footer: '../src/image/footer/';
     
     .footer {
         .position(absolute, auto, 0*@px, 0*@px, 0*@px);
