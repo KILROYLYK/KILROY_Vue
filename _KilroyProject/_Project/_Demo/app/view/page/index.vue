@@ -17,5 +17,5 @@
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped>
-
+    @import '../../../../_Base/css/base.less';
 </style>
