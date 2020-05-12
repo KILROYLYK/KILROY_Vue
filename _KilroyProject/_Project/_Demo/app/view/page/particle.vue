@@ -19,10 +19,9 @@
             }
         },
         mounted: () => {
-            const dom = document.getElementById('particle');
+      
         }
     }
-
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped>
