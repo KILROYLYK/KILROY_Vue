@@ -1,16 +1,12 @@
 <template>
     <div id="index" class="index">
-        <Particle :Data="Data" />
     </div>
 </template>
 
 <script lang="ts" type="text/tsx">
-    import Particle from './particle.vue';
-    
     export default {
         name: 'Index',
         components: {
-            Particle
         },
         props: {
             Data: Object
@@ -20,7 +16,7 @@
                 prop = {
                     Data: component.Data
                 };
-            
+
             return {
                 name: prop + '_Index'
             }
@@ -30,9 +26,9 @@
 
 <style lang="less" rel="stylesheet/less" scoped>
     @import '../../../../_Base/css/base.less';
-    
+
     @image_nav: '../src/image/index/';
-    
+
     .index {
         overflow: hidden;
         position: relative;
