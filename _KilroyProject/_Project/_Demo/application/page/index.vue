@@ -25,7 +25,7 @@
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped>
-    @import '../../../../_Base/css/base.less';
+    @import '../../../_Base/css/base.less';
 
     @image_nav: '../src/image/index/';
 
