@@ -1,9 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-/**
- * 页面
- */
 import Index from '../page/index.vue';
 
 Vue.use(VueRouter);
