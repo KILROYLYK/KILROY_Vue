@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="less" rel="stylesheet/less" scoped>
-@import '../../../../_Base/Resource/css/base.less';
+@import '../../../resource/css/_global.less';
 
 @image_nav: '../src/image/nav/';
 

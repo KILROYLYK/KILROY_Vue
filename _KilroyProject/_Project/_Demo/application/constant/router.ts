@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 /**
  * 路由
  */
-const Router = new VueRouter({
+export default new VueRouter({
     mode: 'history',
     routes: [
         // 一级页面
@@ -20,4 +20,3 @@ const Router = new VueRouter({
         // 二级页面
     ]
 });
-export default Router;
